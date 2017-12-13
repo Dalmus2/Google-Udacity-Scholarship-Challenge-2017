@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Code challenge 05.12</title>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+	<nav>
+			<ul class="nav">
+				<li class="first-menu-item"><a href="">Home</a></li>
+				<li><a href="">Services</a></li>
+				<li><a href="">Case Studies</a></li>
+				<li><a href="">Blog</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+	</nav>
+
+	<div class="photo-container">
+				 <div class="photo">
+					 	 <img src="img/img1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow"/>
+			 </div>
+				 <div class="photo">
+					 <img src="img/img2.jpeg" onclick="openModal();currentSlide(2)" class="hover-shadow"/>
+			 </div>
+					 <div class="photo">
+						 <img src="img/img3.jpeg" onclick="openModal();currentSlide(3)" class="hover-shadow"/>
+				 </div>
+						 <div class="photo">
+							 <img src="img/img4.jpeg" onclick="openModal();currentSlide(4)" class="hover-shadow"/>
+					 </div>
+							 <div class="photo">
+								 <img src="img/img5.jpeg"onclick="openModal();currentSlide(5)" class="hover-shadow"/>
+						 </div>
+								 <div class="photo">
+									 <img src="img/img6.jpeg" onclick="openModal();currentSlide(6)" class="hover-shadow"/>
+							 </div>
+	</div>
+	<!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+
+  <div class="modal-content">
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src="img/img1.jpg">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src="img/img2.jpeg">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src="img/img3.jpeg">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src="img/img4.jpeg">
+    </div>
+		<div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src="img/img5.jpeg">
+    </div>
+		<div class="mySlides">
+			<div class="numbertext">6 / 6</div>
+			<img src="img/img6.jpeg">
+		</div>
+
+		<!-- Next/previous controls -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+		<!-- Thumbnail image controls -->
+	    <div class="photo">
+	      <img class="demo" src="img/img1.jpg" onclick="currentSlide(1)" alt="Abstract object">
+	    </div>
+	    <div class="photo">
+	      <img class="demo" src="img/img2.jpeg" onclick="currentSlide(2)" alt="Wood pencil">
+	    </div>
+	    <div class="photo">
+	      <img class="demo" src="img/img3.jpeg" onclick="currentSlide(3)" alt="Origami boats">
+	    </div>
+	    <div class="photo">
+	      <img class="demo" src="img/img4.jpeg" onclick="currentSlide(4)" alt="Tools">
+	    </div>
+			<div class="photo">
+			 <img class="demo" src="img/img5.jpeg" onclick="currentSlide(5)" alt="Creativity">
+		 </div>
+		 <div class="photo">
+			 <img class="demo" src="img/img6.jpeg" onclick="currentSlide(6)" alt="Colorful plants">
+		 </div>
+	  </div>
+	</div>
+	<script src="javascript.js"></script>
+</body>
